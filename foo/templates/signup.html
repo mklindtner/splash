@@ -8,7 +8,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Quick Signin & Signup form Flat Responsive Widget Template :: w3layouts</title>
+    <title>Quick Signup form Flat Responsive Widget Template :: w3layouts</title>
     <!-- Meta-Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -24,7 +24,7 @@
     </script>
     <!-- //Meta-Tags -->
     <!-- Index-Page-CSS -->
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles/signup-style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/signup-style.css') }}" type="text/css">   
     <!-- onlinefonts -->
     <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
     <!-- //Custom-Stylesheet-Links -->
@@ -32,43 +32,24 @@
 
 <body>
     <header>
-        <h1 class="title-agile text-center">Quick Signin & Signup form</h1>
+        <h1 class="title-agile text-center">Quick Signup form</h1>
     </header>
     <!-- //header -->
     <section class="login-wrap">
         <div class="main_w3agile">
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
-            <label for="tab-1" class="tab">List of Voluenteers</label>
+            <label for="tab-1" class="tab">List of Volunteers</label>
             <input id="tab-2" type="radio" name="tab" class="sign-up">
             <label for="tab-2" class="tab">Sign Up</label>
             <div class="login-form">
                 <!-- signin form -->
-                <div class="signin_wthree">
-                    <form method="post" action="#">
-                        <div class="group">
-                            <label for="user" class="label">Username</label>
-                            <input id="user" type="text" class="input" required>
-                        </div>
-                        <div class="group">
-                            <label for="pass" class="label">Password</label>
-                            <input id="pass" type="password" class="input" data-type="password" required>
-                        </div>
-                        <div class="group">
-                            <input id="check" type="checkbox" class="check" checked>
-                            <label for="check">
-                                <span class="icon"></span> Keep me Signed in</label>
-                        </div>
-                        <div class="group">
-                            <input type="submit" class="button" value="Sign In">
-                        </div>
-                        <div class="hr"></div>
-                        <div class="foot-lnk">
-                            <h2><a href="#">Forgot Password?</a></h2>
-                        </div>
-                    </form>
-                </div>
-                <!-- //signin form -->
-                <!-- signup form -->
+                <div class="participants">    
+                {% for user in participants %}
+                    <li>{{user.username}}<br />
+                        comment:{{user.comment}}
+                    </li>
+                {% endfor %}
+                </div>              
                 <div class="signup_wthree">
                     <!-- url_for is not working -->
                     <form method="POST" action="{{ url_for('create_applicant') }}">
@@ -101,29 +82,14 @@
     <!-- //section -->
     <footer>
         <div class="copy-wthree text-center">
-            <p>© 2018 Quick Signin & Signup form. All rights reserved | Design by
+            <p>© 2018 Quick Sign-in & Signup form. All rights reserved | Design by
                 <a href="http://w3layouts.com">W3layouts</a>
             </p>
         </div>
     </footer>
     <!-- //footer -->
     <!-- script for password match -->
-    <script>
-        window.onload = function () {
-            document.getElementById("password1").onchange = validatePassword;
-            document.getElementById("password2").onchange = validatePassword;
-        }
-
-        function validatePassword() {
-            var pass2 = document.getElementById("password2").value;
-            var pass1 = document.getElementById("password1").value;
-            if (pass1 != pass2)
-                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-            else
-                document.getElementById("password2").setCustomValidity('');
-            //empty string means no validation error
-        }
-    </script>
+    <script src="{{ url_for('static',filename='js/voluenteers.js') }}"></script>    
     <!-- script for password match -->
 </body>
 <!-- //Body -->

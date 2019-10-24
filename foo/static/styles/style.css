@@ -82,6 +82,7 @@ h2 {
 .sigmapad {
 	padding: 0 1px 1px 0 !important;
 	margin: 0 !important;
+	color: red;
 }
 
 .sigmano {
@@ -101,7 +102,9 @@ h2 {
 	padding: 0px;
 	padding-top: 150px;
 	padding-bottom: 150px;
-	background: url(../images/tm-sigma-00.jpg) no-repeat center center fixed; 
+	/* background: url(../images/tm-sigma-00.jpg) no-repeat center center fixed;  */
+	background: url(../images/splashfoto.jpg) no-repeat center center fixed; 
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -150,20 +153,86 @@ h2 {
 }
 
 /* Sigma BG Colors --- BEGIN */
+/* discussion */
+.discussion {
+	/* background-color: #E4E8E8; */
+	color: #FFF;
+	background-image: url(../images/forum.jpg);
+}
+
+/* sports */
+.sports {
+	/* background-color: #999; */
+	color: #FFF;
+	font-weight: bold;
+	background-image: url(../images/sports.jpg);
+
+}
+
+.music {
+	/* background-color: #666; */
+	color: #FFF;
+	background-image: url(../images/music.jpg);
+}
+
+.photo {
+	/* background-color: #666; */
+	color: #FFF;
+	background-image: url(../images/Photography.jpg);
+}
+
+.tv {
+	color: #FFF;
+	background-image: url(../images/tv2.jpg);
+}
+
+.crafts {
+	color: #FFF;
+	background-image: url(../images/crafts.jpg);
+}
 
 .sigma-bg-lightgray {
 	background-color: #E4E8E8;
+	padding: 115px;
 }
 
 .sigma-bg-gray {
 	background-color: #999;
 	color: #FFF;
+	padding: 110px;
+
 }
 
 .sigma-bg-darkgray {
 	background-color: #666;
 	color: #FFF;
+	padding: 100px;
+
 }
+
+
+.event1 {
+	background-color: #04c083;
+	color: #FFF;
+	padding: 120px;
+
+}
+
+.event2 {
+	background-color: #089bbc;
+	color: #FFF;
+	padding: 120px;
+}
+
+.event3 {
+	background-color: #8308bc;
+	color: #FFF;
+	padding: 120px;
+
+}
+
+
+
 
 .sigma-bg-black {
 	background-color: #444;
@@ -221,7 +290,7 @@ h2 {
 		font-size: 24px;
 	}
 	.sigma-icon {
-		font-size: 48px;
+		font-size: 68px;
 		padding: 20px;
 	}
 	.site-title h2 {
