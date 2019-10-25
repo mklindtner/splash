@@ -103,7 +103,7 @@ h2 {
 	padding-top: 150px;
 	padding-bottom: 150px;
 	/* background: url(../images/tm-sigma-00.jpg) no-repeat center center fixed;  */
-	background: url(../images/splashfoto.jpg) no-repeat center center fixed; 
+	background: url(../images/splaah1.jpg) no-repeat center center fixed; 
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -158,6 +158,7 @@ h2 {
 	/* background-color: #E4E8E8; */
 	color: #FFF;
 	background-image: url(../images/forum.jpg);
+	padding: 110px;
 }
 
 /* sports */
@@ -166,6 +167,7 @@ h2 {
 	color: #FFF;
 	font-weight: bold;
 	background-image: url(../images/sports.jpg);
+	padding: 110px;
 
 }
 
@@ -173,22 +175,26 @@ h2 {
 	/* background-color: #666; */
 	color: #FFF;
 	background-image: url(../images/music.jpg);
+	padding: 110px;
+}
+
+.tv {
+	color: #FFF;
+	background-image: url(../images/tv2.jpg);
+	padding: 110px;
 }
 
 .photo {
 	/* background-color: #666; */
 	color: #FFF;
 	background-image: url(../images/Photography.jpg);
-}
-
-.tv {
-	color: #FFF;
-	background-image: url(../images/tv2.jpg);
+	padding: 110px;
 }
 
 .crafts {
 	color: #FFF;
 	background-image: url(../images/crafts.jpg);
+	padding: 110px;
 }
 
 .sigma-bg-lightgray {

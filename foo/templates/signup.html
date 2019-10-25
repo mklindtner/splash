@@ -47,7 +47,7 @@
                 {% for user in participants %}
                     <li>{{user.username}}<br />
                         comment:{{user.comment}}
-                    </li>
+                    </li> <br />
                 {% endfor %}
                 </div>              
                 <div class="signup_wthree">
@@ -55,15 +55,15 @@
                     <form method="POST" action="{{ url_for('create_applicant') }}">
                         <div class="group">
                             <label for="user1" class="label">Name</label>
-                            <input id="user1" name="user1" type="text" class="input" value="fooz" required>
+                            <input id="user1" name="user1" type="text" class="input" value="" required>
                         </div>
                         <div class="group">
                             <label for="password1" class="label">Comment</label>
-                            <input id="password1" type="password" name="password1" class="input" data-type="password" value="123" required>
+                            <input id="password1" type="text" name="password1" class="input" data-type="text" value="" required>
                         </div>
                         <div class="group">
                             <label for="email" class="label">Email Address</label>
-                            <input id="email" type="email" class="input" name="email" value="foo@email.com" required>
+                            <input id="email" type="email" class="input" name="email" value="" required>
                         </div>
                         
                         <div class="group">
